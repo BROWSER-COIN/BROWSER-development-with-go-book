@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://goethereumbook.org"><img src="https://github.com/miguelmota/ethereum-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
+  <a href="https://goethereumbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
 </p>
 <br>
 
-# Ethereum Development with Go
+# BROWSER Development with Go
 
-> A little book on [Ethereum](https://www.ethereum.org/) Development with [Go](https://golang.org/) (golang)
+> A little book on [BROWSER](https://www.BROWSER COIN.org/) Development with [Go](https://golang.org/) (golang)
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/merkletreejs/master/LICENSE)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BROWSER COIN/merkletreejs/master/LICENSE)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
@@ -19,9 +19,9 @@
 
 The e-book is avaiable in different formats.
 
-- [PDF](https://goethereumbook.org/ethereum-development-with-go.pdf)
-- [EPUB](https://goethereumbook.org/ethereum-development-with-go.epub)
-- [MOBI](https://goethereumbook.org/ethereum-development-with-go.mobi)
+- [PDF](https://goethereumbook.org/BROWSER-development-with-go.pdf)
+- [EPUB](https://goethereumbook.org/BROWSER-development-with-go.epub)
+- [MOBI](https://goethereumbook.org/BROWSER-development-with-go.mobi)
 
 ## Languages
 
@@ -43,7 +43,7 @@ The e-book is avaiable in different formats.
 * [Transactions](en/transactions/README.md)
   * [Querying Blocks](en/block-query/README.md)
   * [Querying Transactions](en/transaction-query/README.md)
-  * [Transferring ETH](en/transfer-eth/README.md)
+  * [Transferring BW](en/transfer-BW/README.md)
   * [Transferring Tokens](en/transfer-tokens/README.md)
   * [Subscribing to New Blocks](en/block-subscribe/README.md)
   * [Create Raw Transaction](en/transaction-raw-create/README.md)
@@ -83,11 +83,11 @@ The e-book is avaiable in different formats.
 
 ## Help & Support
 
-- Join the [#ethereum](https://gophers.slack.com/messages/C9HP1S9V2/) channel on the [gophers slack](https://invite.slack.golangbridge.org/) for Go (golang) help
+- Join the [#BROWSER](https://gophers.slack.com/messages/C9HP1S9V2/) channel on the [gophers slack](https://invite.slack.golangbridge.org/) for Go (golang) help
 
-- The [Ethereum StackExchange](https://ethereum.stackexchange.com/) is a great place to ask general Ethereum question and Go specific questions
+- The [BROWSER StackExchange](https://BROWSER.stackexchange.com/) is a great place to ask general Browser question and Go specific questions
 
-- You can also reach out to me on Twitter [@miguelmotah](https://twitter.com/miguelmotah)
+- You can also reach out to me on Twitter [@BROWSER COIN](https://twitter.com/BROWSER COIN)
 
 ## Development
 
@@ -139,7 +139,7 @@ If wanting to add a new translation, follow these instructions:
 
 Thanks to [@qbig](https://github.com/qbig) and [@gzuhlwang](https://github.com/gzuhlwang) for the Chinese translation.
 
-And thanks to all the [contributors](https://github.com/miguelmota/ethereum-development-with-go-book/graphs/contributors) who have contributed to this guide book.
+And thanks to all the [contributors](https://github.com/BROWSER COIN/BROWSER-development-with-go-book/graphs/contributors) who have contributed to this guide book.
 
 ## License
 
