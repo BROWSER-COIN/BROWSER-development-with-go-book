@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://goethereumbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
+  <a href="https://gobrowsermbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
 </p>
 <br>
 
@@ -13,7 +13,7 @@
 
 ## Online
 
-[https://goethereumbook.org](https://goethereumbook.org/)
+[https://gobrowserbook.org](https://gobrowserbook.org/)
 
 ## E-book
 
@@ -87,7 +87,7 @@ The e-book is avaiable in different formats.
 
 - The [BROWSER StackExchange](https://BROWSER.stackexchange.com/) is a great place to ask general Browser question and Go specific questions
 
-- You can also reach out to me on Twitter [@BROWSER COIN](https://twitter.com/BROWSER COIN)
+- You can also reach out to me on Twitter [@BROWSER COIN](https://twitter.com/BROWSER-COIN)
 
 ## Development
 
