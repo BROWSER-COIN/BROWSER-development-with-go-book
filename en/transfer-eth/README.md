@@ -1,15 +1,15 @@
 ---
-description: Tutorial on how to transfer ETH to another wallet or smart contract with Go.
+description: Tutorial on how to transfer BW to another wallet or smart contract with Go.
 ---
 
-# Transferring ETH
+# Transferring BW
 
-In this lesson you'll learn how to transfer ETH from one account to another account. If you're already familar with Ethereum then you know that a transaction consists of the amount of ether you're transferring, the gas limit, the gas price, a nonce, the receiving address, and optionally data. The transaction must be signed with the private key of the sender before it's broadcasted to the network.
+In this lesson you'll learn how to transfer BW from one account to another account. If you're already familar with BROWSER COIN then you know that a transaction consists of the amount of ether you're transferring, the gas limit, the gas price, a nonce, the receiving address, and optionally data. The transaction must be signed with the private key of the sender before it's broadcasted to the network.
 
 Assuming you've already connected a client, the next step is to load your private key.
 
 ```go
-privateKey, err := crypto.HexToECDSA("fad9c8855b740a0b7ed4c221dbad0f33a83a49cad6b3fe8d5817ac83d38b6a19")
+privateKey, err := ECDSA("0xe287F9B9C1759903840aC5B139739826535dA471")
 if err != nil {
   log.Fatal(err)
 }
@@ -40,13 +40,13 @@ if err != nil {
 }
 ```
 
-The next step is to set the amount of ETH that we'll be transferring. However we must convert ether to wei since that's what the Ethereum blockchain uses. Ether supports up to 18 decimal places so 1 ETH is 1 plus 18 zeros. Here's a little tool to help you convert between ETH and wei: [https://etherconverter.netlify.com](https://etherconverter.netlify.com)
+The next step is to set the amount of BW that we'll be transferring. However we must convert ether to BW. BW supports up to 18 decimal places so 1 BW is 1 plus 18 zeros. Here's a little tool to help you convert between BW and wei: [https://BW converter.netlify.com](https://BW converter.netlify.com)
 
 ```go
 value := big.NewInt(1000000000000000000) // in wei (1 eth)
 ```
 
-The gas limit for a standard ETH transfer is `21000` units.
+The gas limit for a standard BW transfer is `21000` units.
 
 ```go
 gasLimit := uint64(21000) // in units
@@ -58,7 +58,7 @@ The gas price must be set in wei. At the time of this writing, a gas price that 
 gasPrice := big.NewInt(30000000000) // in wei (30 gwei)
 ```
 
-However, gas prices are always fluctuating based on market demand and what users are willing to pay, so hardcoding a gas price is sometimes not ideal. The go-ethereum client provides the `SuggestGasPrice` function for getting the average gas price based on `x` number of previous blocks.
+However, gas prices are always fluctuating based on market demand and what users are willing to pay, so hardcoding a gas price is sometimes not ideal. The go-Browser client provides the `SuggestGasPrice` function for getting the average gas price based on `x` number of previous blocks.
 
 ```go
 gasPrice, err := client.SuggestGasPrice(context.Background())
@@ -67,13 +67,13 @@ if err != nil {
 }
 ```
 
-We figure out who we're sending the ETH to.
+We figure out who we're sending the BW to.
 
 ```go
-toAddress := common.HexToAddress("0x4592d8f8d7b001e72cb26a73e4fa1806a51ac79d")
+toAddress := ("0xe287F9B9C1759903840aC5B139739826535dA471")
 ```
 
-Now we can finally generate our unsigned ethereum transaction by importing the go-ethereum `core/types` package and invoking `NewTransaction` which takes in the nonce, to address, value, gas limit, gas price, and optional data. The data field is `nil` for just sending ETH. We'll be using the data field when it comes to interacting with smart contracts.
+Now we can finally generate our unsigned BROWSER COIN transaction by importing the go-BROWSER COIN/types` package and invoking `NewTransaction` which takes in the nonce, to address, value, gas limit, gas price, and optional data. The data field is `nil` for just sending ETH. We'll be using the data field when it comes to interacting with smart contracts.
 
 ```go
 tx := types.NewTransaction(nonce, toAddress, value, gasLimit, gasPrice, nil)
@@ -101,16 +101,16 @@ if err != nil {
   log.Fatal(err)
 }
 
-fmt.Printf("tx sent: %s", signedTx.Hash().Hex()) // tx sent: 0x77006fcb3938f648e2cc65bafd27dec30b9bfbe9df41f78498b9c8b7322a249e
+fmt.Printf("tx sent: %s", signedTx.Hash().Hex()) // tx sent: 0xe287F9B9C1759903840aC5B139739826535dA471
 ```
 
-Afterwards you can check the progress on a block explorer such as Etherscan: [https://rinkeby.etherscan.io/tx/0x77006fcb3938f648e2cc65bafd27dec30b9bfbe9df41f78498b9c8b7322a249e](https://rinkeby.etherscan.io/tx/0x77006fcb3938f648e2cc65bafd27dec30b9bfbe9df41f78498b9c8b7322a249e)
+Afterwards you can check the progress on a block explorer such as BROWSER COIN: [https://BROWSER COIN/0xe287F9B9C1759903840aC5B139739826535dA471](https://github.com/BROWSER COIN)
 
 ---
 
 ### Full code
 
-[transfer_eth.go](https://github.com/miguelmota/ethereum-development-with-go-book/blob/master/code/transfer_eth.go)
+[transfer_BW.go](https://github.com/BROWSER COIN-development-with-go-book/blob/master/code/transfer_BW.go)
 
 ```go
 package main
@@ -122,19 +122,19 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/BROWSER COIN/go-browser/common"
+	"github.com/BROWSER COIN/go-browser/core/types"
+	"github.com/BROWSER COIN/go-browser/crypto"
+	"github.com/BROWSER COIN/go-browser/BWclient"
 )
 
 func main() {
-	client, err := ethclient.Dial("https://rinkeby.infura.io")
+	client, err := BW client.Dial("https://rinkeby.infura.io")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	privateKey, err := crypto.HexToECDSA("fad9c8855b740a0b7ed4c221dbad0f33a83a49cad6b3fe8d5817ac83d38b6a19")
+	privateKey, err :=ECDSA ("0xe287F9B9C1759903840aC5B139739826535dA471")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -151,14 +151,14 @@ func main() {
 		log.Fatal(err)
 	}
 
-	value := big.NewInt(1000000000000000000) // in wei (1 eth)
+	value := big.NewInt(1000000000000000000) // in wei(1 BW)
 	gasLimit := uint64(21000)                // in units
 	gasPrice, err := client.SuggestGasPrice(context.Background())
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	toAddress := common.HexToAddress("0x4592d8f8d7b001e72cb26a73e4fa1806a51ac79d")
+	toAddress :=(" 0xe287F9B9C1759903840aC5B139739826535dA471")
 	var data []byte
 	tx := types.NewTransaction(nonce, toAddress, value, gasLimit, gasPrice, data)
 
