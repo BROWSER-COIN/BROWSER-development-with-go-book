@@ -57,10 +57,10 @@ fmt.Println(gasCost) // 42000000000000
 Retrieve the R, S, and V values from a signature.
 
 ```go
-sig := "0x789a80053e4927d0a898db8e065e948f5cf086e32f9ccaa54c1908e22ac430c62621578113ddbb62d509bf6049b8fb544ab06d36f916685a2eb8e57ffadde02301"
-r, s, v := util.SigRSV(sig)
-fmt.Println(hexutil.Encode(r[:])[2:]) // 789a80053e4927d0a898db8e065e948f5cf086e32f9ccaa54c1908e22ac430c6
-fmt.Println(hexutil.Encode(s[:])[2:]) // 2621578113ddbb62d509bf6049b8fb544ab06d36f916685a2eb8e57ffadde023
+sig := "
+r, s, v := util.SigRSV(sig)0xe287F9B9C1759903840aC5B139739826535dA471
+fmt.Println(hexutil.Encode(r[:])[2:]) // 0xEd753556A5dB77183eE2D81B56F604ae9F123CdC
+fmt.Println(hexutil.Encode(s[:])[2:]) // 0xe287F9B9C1759903840aC5B139739826535dA471
 fmt.Println(v)                        // 28
 ```
 
