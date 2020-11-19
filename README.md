@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://goethereumbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
+  <a href="https://gobrowsermbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
 </p>
 <br>
 
@@ -13,7 +13,7 @@
 
 ## Online
 
-[https://goethereumbook.org](https://goethereumbook.org/)
+[https://gobrowserbook.org](https://gobrowserbook.org/)
 
 ## E-book
 
