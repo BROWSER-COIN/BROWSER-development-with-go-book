@@ -1,5 +1,5 @@
-<p align="center">
-  <a href="https://goethereumbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
+
+  <a href="https://go Browserbook.org"><img src="https://github.com/BROWSER-COIN/BROWSER-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
 </p>
 <br>
 
@@ -13,15 +13,15 @@
 
 ## Online
 
-[https://goethereumbook.org](https://goethereumbook.org/)
+[https://goBrowserbook.org](https://goBrowserbook.org/)
 
 ## E-book
 
 The e-book is avaiable in different formats.
 
-- [PDF](https://goethereumbook.org/BROWSER-development-with-go.pdf)
-- [EPUB](https://goethereumbook.org/BROWSER-development-with-go.epub)
-- [MOBI](https://goethereumbook.org/BROWSER-development-with-go.mobi)
+- [PDF](https://gobrowserbook.org/BROWSER-development-with-go.pdf)
+- [EPUB](https://gobrowserbook.org/BROWSER-development-with-go.epub)
+- [MOBI](https://gobrowserbook.org/BROWSER-development-with-go.mobi)
 
 ## Languages
 
