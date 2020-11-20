@@ -3,9 +3,9 @@
 
 # BROWSER Development with Go
 
-> A little book on [BROWSER](https://www.browsercoin.com)
+> [SMART BOOK BROWSER](https://www.browsercoin.com)
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BROWSER COIN/merkletreejs/master/LICENSE)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https:github.com/BROWSER COIN LICENSE)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
