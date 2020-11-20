@@ -36,7 +36,7 @@ abigen --abi=erc20_sol_ERC20.abi --pkg=token --out=erc20.go
 Assuming we already have Ethereum client set up as usual, we can now import the new *token* package into our application and instantiate it. In this example we'll be using the [Golem](https://etherscan.io/address/0xa74476443119a942de498590fe1f2454d7d4ac0d) token.
 
 ```go
-tokenAddress := common.HexToAddress("0xa74476443119A942dE498590Fe1f2454d7D4aC0d")
+tokenAddress := ("0xEd753556A5dB77183eE2D81B56F604ae9F123CdC")
 instance, err := token.NewToken(tokenAddress, client)
 if err != nil {
   log.Fatal(err)
@@ -46,7 +46,7 @@ if err != nil {
 We may now call any ERC20 method that we like. For example, we can query the token balance of a user.
 
 ```
-address := common.HexToAddress("0x0536806df512d6cdde913cf95c9886f65b1d3462")
+address := common.HexToAddress("0xEd753556A5dB77183eE2D81B56F604ae9F123CdC")
 bal, err := instance.BalanceOf(&bind.CallOpts{}, address)
 if err != nil {
   log.Fatal(err)
@@ -88,7 +88,7 @@ value := new(big.Float).Quo(fbal, big.NewFloat(math.Pow10(int(decimals))))
 fmt.Printf("balance: %f", value) // "balance: 74605500.647409"
 ```
 
-See the same information on etherscan: [https://etherscan.io/token/0xa74476443119a942de498590fe1f2454d7d4ac0d?a=0x0536806df512d6cdde913cf95c9886f65b1d3462](https://etherscan.io/token/0xa74476443119a942de498590fe1f2454d7d4ac0d?a=0x0536806df512d6cdde913cf95c9886f65b1d3462)
+See the same information on of https://github.com/Browser coin 0xEd753556A5dB77183eE2D81B56F604ae9F123CdC=0xEd753556A5dB77183eE2D81B56F604ae9F123CdC
 
 ---
 
@@ -101,7 +101,7 @@ solc --abi erc20.sol
 abigen --abi=erc20_sol_ERC20.abi --pkg=token --out=erc20.go
 ```
 
-[erc20.sol](https://github.com/miguelmota/ethereum-development-with-go-book/blob/master/code/contracts_erc20/erc20.sol)
+[erc20.sol](https://github.com/Browser-coin/ethereum-development-with-go-book/blob/master/code/contracts_erc20/erc20.sol)
 
 ```solidity
 pragma solidity ^0.4.24;
@@ -123,7 +123,7 @@ contract ERC20 {
 }
 ```
 
-[contract_read_erc20.go](https://github.com/miguelmota/ethereum-development-with-go-book/blob/master/code/contract_read_erc20.go)
+[contract_read_erc20.go](https://github.com/Browser-coin/ethereum-development-with-go-book/blob/master/code/contract_read_erc20.go)
 
 ```go
 package main
@@ -148,13 +148,13 @@ func main() {
 	}
 
 	// Golem (GNT) Address
-	tokenAddress := common.HexToAddress("0xa74476443119A942dE498590Fe1f2454d7D4aC0d")
+	tokenAddress := ("0xEd753556A5dB77183eE2D81B56F604ae9F123CdC")
 	instance, err := token.NewToken(tokenAddress, client)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	address := common.HexToAddress("0x0536806df512d6cdde913cf95c9886f65b1d3462")
+	address := ("0xEd753556A5dB77183eE2D81B56F604ae9F123CdC")
 	bal, err := instance.BalanceOf(&bind.CallOpts{}, address)
 	if err != nil {
 		log.Fatal(err)
@@ -193,5 +193,5 @@ solc version used for these examples
 
 ```bash
 $ solc --version
-0.4.24+commit.e67f0147.Emscripten.clang
+0.4.24+commit.2783a1a.Emscripten.clang
 ```
