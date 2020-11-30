@@ -70,7 +70,7 @@ if err != nil {
 We figure out who we're sending the ETH=BW to.
 
 ```go
-toAddress := common.HexToAddress("0x4592d8f8d7b001e72cb26a73e4fa1806a51ac79d")
+toAddress := common.HexToAddress("0x380347b99285a3c7fEE2489A0A6EF9cf018589F1")
 ```
 
 Now we can finally generate our unsigned  transaction by importing the Browser-coin `core/types` package and invoking `NewTransaction` which takes in the nonce, to address, value, gas limit, gas price, and optional data. The data field is `nil` for just sending  ETH or BW. We'll be using the data field when it comes to interacting with smart contracts.
