@@ -40,7 +40,7 @@ if err != nil {
 }
 ```
 
-The next step is to set the amount of BW that we'll be transferring. However we must convert ether to wei since that's what the BROWSER-COIN blockchain uses. BW supports up to 18 decimal places so 1 BW is 1 plus 18 zeros. Here's a little tool to help you convert between BW and wei: [https://converter.netlify.com](https:/converter.netlify.com)
+The next step is to set the amount of BW that we'll be transferring. However we must convert ether to wei since that's what the BROWSER-COIN blockchain uses. BW supports up to 18 decimal places so 1 BW is 1 plus 18 zeros. Here's a little tool to help you convert between BW and wei
 
 ```go
 value := big.NewInt(1000000000000000000) // in wei (1 eth=BW)
