@@ -139,7 +139,7 @@ fmt.Println(gasLimit) // 23256
 
 Now we have all the information we need to generate the transaction.
 
-We'll create a transaction similar the one we used in [section on transferring ETH](../transfer-eth), EXCEPT that the *to* field should contain the token smart contract address, and the value field should be set to `0` since we're not transferring ETH. This is a gotcha that confuses people.
+We'll create a transaction similar the one we used in [section on transferring BW](../transfer-BW), EXCEPT that the *to* field should contain the token smart contract address, and the value field should be set to `0` since we're not transferring BW. This is a gotcha that confuses people.
 
 ```go
 tx := types.NewTransaction(nonce, tokenAddress, value, gasLimit, gasPrice, data)
@@ -169,16 +169,13 @@ if err != nil {
 
 fmt.Printf("tx sent: %s", signedTx.Hash().Hex()) // tx sent: 0xa56316b637a94c4cc0331c73ef26389d6c097506d581073f927275e7a6ece0bc
 ```
-
-You can check the progress on Etherscan: [https://rinkeby.etherscan.io/tx/0xa56316b637a94c4cc0331c73ef26389d6c097506d581073f927275e7a6ece0bc](https://rinkeby.etherscan.io/tx/0xa56316b637a94c4cc0331c73ef26389d6c097506d581073f927275e7a6ece0bc)
-
 To learn how to load and interact with an ERC20 smart contract, check out the [section on ERC20 token smart contracts](../smart-contract-read-erc20).
 
 ---
 
 ### Full code
 
-[transfer_tokens.go](https://github.com/Browser-Coin/Bitcoin Browser-development-with-go-book/blob/master/code/transfer_tokens.go)
+[transfer_tokens.go](https://github.com/Browser-Coin/Bitcoin Browser-development/blob/master/code/transfer_tokens.go)
 
 ```go
 package main
@@ -191,21 +188,21 @@ import (
 	"math/big"
 
 	"golang.org/x/crypto/sha3"
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethclient"
+	"githuh.com/Browser-coin/"Browser-coin"
+	"github.com/Browser-coin/Browser-coin/common"
+	"github.com/Browser-coin/Browser-coin/common/hexutil"
+	"github.com/Browser-coin/Browser-coin/core/types"
+	"github.com/Browser-coin/Browser-coin/crypto"
+	"github.com/Browser-coin/Browser-coin/BWclient"
 )
 
 func main() {
-	client, err := ethclient.Dial("https://rinkeby.infura.io")
+	client, err := BWclient.Dial("https://github.com/Browser-coin/Browser-coin.infura.io")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	privateKey, err := crypto.HexToECDSA("fad9c8855b740a0b7ed4c221dbad0f33a83a49cad6b3fe8d5817ac83d38b6a19")
+	privateKey, err := crypto.HexECDSA("0x2D170ce1F719476FeC1a92856cf632aE93444b41")
 	if err != nil {
 		log.Fatal(err)
 	}
